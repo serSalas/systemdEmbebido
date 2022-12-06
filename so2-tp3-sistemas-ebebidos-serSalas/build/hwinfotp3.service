@@ -1,0 +1,12 @@
+[Unit]
+Description=Serivicio de Informacion de HW
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hwinfo_tp3
+User=skaliver
+
+[Install]
+WantedBy=multi-user.target
